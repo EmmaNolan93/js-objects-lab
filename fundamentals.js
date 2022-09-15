@@ -15,4 +15,20 @@ aCar.color = {
   }
 console.log(aCar.owner + " drives a " + aCar.type.make);
 console.log( "Reg. = " + aCar.registration.year + "-" + aCar.registration.county +"-" +aCar.registration.number);
-console.log( "It is a " +  aCar.color.exterior + " car, " + aCar.milage +  " milage, with " + aCar.color.interior.texture + " interior.");
+console.log( "It is a " +  aCar.color.exterior + " car, " + aCar.milage +  " milage, with " + aCar.color.interiorFabric.texture + " interior.");
+const aCar1 = {
+    owner: "Joe Bloggs",
+    previous_owners: [
+      { name: "Pat Smith", address: "1 Main Street" },
+      { name: "Sheila Dwyer", address: "2 High Street" }
+    ],
+  }
+  console.log(
+    "First owner: " +
+      aCar1.previous_owners[0].name +
+      ' - ' +
+      aCar1.previous_owners[0].address
+  )
+  for (let i = 0 ; i < aCar1.previous_owners.length ; i += 1) {
+    console.log(aCar1.previous_owners[i].name);
+}
